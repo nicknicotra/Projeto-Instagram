@@ -6,6 +6,8 @@
       text-decoration: none;
   }
   
+/* Edita Barra do topo quando a largura da tela for inferior a 614px.  */
+
   .topo-mobile {
     width: 100%;
     height: 54px;
@@ -16,6 +18,10 @@
     padding-right: 16px;
     display: none;
     justify-content: space-between;
+    position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
   }
   
   .topo-mobile img {
@@ -28,12 +34,20 @@
     height: 22px;
   }
   
+/* Edita Barra inferior quando a largura da tela for inferior a 614px */
+
   .inferior-mobile {
     width: 100%;
     height: 54px;
     background: #ffffff;
     border: 1px solid #dbdbdb;
     display: none;
+    justify-content: space-between;
+    padding: 15px 19px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
   }
   
   .inferior-mobile ion-icon {
@@ -41,6 +55,8 @@
     height: 22px;
   }
   
+/* Edita Barra do topo no Layout Desktop */
+
   .topo {
     width: 100%;
     height: 54px;
@@ -127,7 +143,8 @@
     width: 22px;
     height: 22px;
   }
-  
+  /* Edita Div com a totalidade da página fora as barras */
+
   .container {
     width: 100%;
     height: 100%;
@@ -138,10 +155,14 @@
     overflow-y: hidden;
   }
   
+/* Edita a Div com o conteudo da página */
+
   .conteudo {
     display: flex;
     margin-top: 88px;
   }
+
+  /* Edita Coluna Principal com Stories e Posts */
   
   .colunaposts {
     width: 614px;
@@ -151,6 +172,8 @@
     overflow: hidden;
   }
   
+/* Edita a caixa de stories */
+
   .caixastories {
     width: 100%;
     height: 118px;
@@ -224,6 +247,8 @@
     color: #262626;
     margin-bottom: 14px;
   }
+
+  /* Edita o div onde fica o post */
   
   .post {
     width: 100%;
@@ -239,6 +264,8 @@
     align-items: center;
   }
   
+  /* Edita Barra superior do post */
+
   .autor {
     width: 100%;
     height: 61px;
@@ -272,17 +299,21 @@
     right: 15px;
     color: #262626;
   }
+
+/* Edita as fotos e o video */
   
   .foto {
     width: 612px;
     height: 612px;
   }
 
-  .post video{
+  video{
     width: 612px;
     height: auto;
   }
   
+/* Edita Div com iconoes do post onde seriam os botoes */
+
   .opcoes {
     width: 100%;
     padding: 10px 15px;
@@ -297,6 +328,8 @@
     margin-right: 13px;
   }
   
+/* Barra inferior do post com curtidas */
+
   .info {
     width: 100%;
     display: flex;
@@ -326,12 +359,16 @@
   strong {
     font-weight: bold;
   }
+
+  /* Edita a Sidebar de maneira fixa  sem modificar a centralização do Layout */
   
   .sidebar {
     width: 300px;
     margin-top: 28px;
     margin-left: 2.2%;
   }
+
+  /* Essa parte fixa a sidebar */
   
   .fixar {
     width: 300px;
@@ -463,8 +500,12 @@
     font-size: 11px;
     line-height: 13px;
     color: #c7c7c7;
+
+    margin-bottom: 18px;
   }
   
+/* - ativa layout sem sidebar quando a largura da tela for menor que 935px */
+
   @media (max-width: 935px) {
     .sidebar {
       display: none;
@@ -473,28 +514,37 @@
         width: 100%;
     }
   }
+
+  /* Ativa o layout para mobile quando a largura da tela for inferior a 614px */
   
   @media (max-width: 614px) {
+
     .sidebar {
       display: none;
     }
+
     .topo {
       display: none;
     }
+
     .topo-mobile {
-      position: fixed;
       display: flex;
-      top: 0;
-      left: 0;
-      z-index: 1;
+      
     }
-  
+
     .inferior-mobile {
-      position: fixed;
       display: flex;
-      z-index: 1;
+      
     }
-  
+
+/* Tira a seta dos stories, pensando que agora seria touch */
+
+    .seta {
+      display: none;
+    }
+
+    /* Conserta as proporções das divs antes com largura fixa e agora largura da página */
+
     .conteudo {
       width: 100%;
       margin-top: 54px;
@@ -508,9 +558,6 @@
     .caixastories {
       background-color: #fafafa;
       width: 100%;
-    }
-    .seta {
-      display: none;
     }
   
     .post {
@@ -541,13 +588,5 @@
       width: 100%;
     }
   
-    .inferior-mobile {
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 19px;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
   }
   
