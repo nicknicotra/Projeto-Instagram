@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+  }
+
+  a {
+      text-decoration: none;
+  }
+  
+  .topo-mobile {
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-right: 16px;
+    display: none;
+    justify-content: space-between;
+  }
+  
+  .topo-mobile img {
+    width: 103px;
+    height: 29px;
+  }
+  
+  .topo-mobile ion-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .inferior-mobile {
+    width: 100%;
+    height: 54px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: none;
+  }
+  
+  .inferior-mobile ion-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .topo {
+    width: 100%;
+    height: 54px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .centro {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 16px;
+  }
+  
+  .logo {
+    width: 148px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .linha {
+    width: 1px;
+    height: 22px;
+    background: #dbdbdb;
+    margin-right: 10px;
+    margin-left: 14.5px;
+    margin-bottom: 17px;
+    margin-top: 15px;
+  }
+  
+  .logo img {
+    width: 103px;
+    height: 29px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .pesquisar {
+    width: 215px;
+    height: 28px;
+    left: 575px;
+    top: 13px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pesquisar p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+  }
+  
+  .atalhos {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .atalhos ion-icon {
+    color: #000000;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    top: 54px;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+  
+  .conteudo {
+    display: flex;
+    margin-top: 88px;
+  }
+  
+  .colunaposts {
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+  
+    overflow: hidden;
+  }
+  
+  .caixastories {
+    width: 100%;
+    height: 118px;
+    padding-left: 18px;
+    padding-top: 18px;
+  
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+  
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .seta {
+    position: absolute;
+    top: 46px;
+    left: 570px;
+    z-index: 1;
+  }
+  
+  .seta ion-icon {
+    color: #ffffff;
+    width: 26px;
+    height: 26px;
+  }
+  
+  .storie {
+    width: 67px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12px;
+  }
+  .fundo {
+    width: 67px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fundo img {
+    width: 66px;
+    height: 66px;
+    position: relative;
+  }
+  
+  .sobreposto {
+    width: 67px;
+    height: 56px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobreposto img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+  }
+  
+  .storie h3 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+    margin-bottom: 14px;
+  }
+  
+  .post {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 36px;
+  
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .autor {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .autor img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-left: 17px;
+  }
+  
+  .autor h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  
+    margin-left: 15px;
+  }
+  
+  .autor ion-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 15px;
+    color: #262626;
+  }
+  
+  .foto {
+    width: 612px;
+    height: 612px;
+  }
+
+  .post video{
+    width: 612px;
+    height: auto;
+  }
+  
+  .opcoes {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .opcoes ion-icon {
+    color: #000000;
+    width: 22px;
+    height: 22px;
+    margin-right: 13px;
+  }
+  
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 17px;
+    margin-bottom: 14px;
+  }
+  
+  .info img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  
+  .info p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #000000;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .sidebar {
+    width: 300px;
+    margin-top: 28px;
+    margin-left: 2.2%;
+  }
+  
+  .fixar {
+    width: 300px;
+    position: fixed;
+    top: 115px;
+  }
+  
+  .perfil {
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .perfil img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 17px;
+  }
+  
+  .perfil h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  .perfil p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  
+    color: #8e8e8e;
+  }
+  
+  .titulo {
+    display: flex;
+    margin-top: 24px;
+  }
+  .titulo h4 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+  }
+  
+  .titulo h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+    margin-left: 120px;
+  }
+  
+  .sugestoes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+  
+  .sugestao {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .sugestao img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 11px;
+  }
+  
+  .sugestao h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  }
+  
+  .sugestao p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+  }
+
+  .sugestao div {
+      width: 140px;
+  }
+  
+  .sugestao h5 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139ef2;
+    margin-left: 60px;
+  }
+  
+  .texto {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .texto h1,
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+  }
+  
+  @media (max-width: 935px) {
+    .sidebar {
+      display: none;
+    }
+    .centro {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 614px) {
+    .sidebar {
+      display: none;
+    }
+    .topo {
+      display: none;
+    }
+    .topo-mobile {
+      position: fixed;
+      display: flex;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .inferior-mobile {
+      position: fixed;
+      display: flex;
+      z-index: 1;
+    }
+  
+    .conteudo {
+      width: 100%;
+      margin-top: 54px;
+      margin-bottom: 54px;
+    }
+  
+    .colunaposts {
+      width: 100%;
+    }
+  
+    .caixastories {
+      background-color: #fafafa;
+      width: 100%;
+    }
+    .seta {
+      display: none;
+    }
+  
+    .post {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+  
+    .autor {
+      width: 100%;
+    }
+  
+    .foto {
+      width: 100%;
+      height: auto;
+    }
+
+    .post video{
+        width: 100%;
+        height: auto;
+    }
+  
+    .opcoes {
+      width: 100%;
+    }
+  
+    .info {
+      width: 100%;
+    }
+  
+    .inferior-mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 19px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  
